@@ -33,7 +33,7 @@ body
 .img1
 {
 	border-radius: 10px;
-	width: 15%;
+	width: 208px;
 	position: absolute;
 	top: 198px;
 	left: 2%;
@@ -129,7 +129,7 @@ nav ul
 .img2
 {
 	border-radius: 10px;
-	width: 15%;
+	width: 208px;
 	position: absolute;
 	top: 198px;
 	left: 18%;
@@ -262,3 +262,93 @@ nav ul
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);}
+
+@media (max-width: 375px) {
+	.univers1 {
+		width: 40%;
+		left: 20px;
+	}
+	.filmsetseriesparunivers {
+		left: 20px;
+		font-size: 22px;
+	}
+	.retrouvervosfilmsetseriesfavorisgratuitementparunivers {
+		left: 20px;
+		font-size: 14px;
+	}
+	.logo {
+		font-size: 35px;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+	}
+	.filmsnav {
+		position: absolute;
+		left: 125px;
+		font-size: 21px;
+		top: 20px;
+	}
+	.seriesnav {
+		position: absolute;
+		left: 183px;
+		font-size: 21px;
+		top: 20px;
+	}
+	.sagasnav {
+		position: absolute;
+		left: 245px;
+		font-size: 21px;
+		top: 20px;
+	}
+	.universnav {
+		position: absolute;
+		left: 305px;
+		font-size: 21px;
+		top: 20px;
+	}
+	.films1 {
+		position: absolute;
+		font-size: 30px;
+		top: 54px;
+		left: 10px;
+	}
+	.ajoutrécents1 {
+		position: absolute;
+		font-size: 18px;
+		top: 64px;
+		left: 90px;
+	}
+	.img1 {
+		width: 190px;
+		position: absolute;
+		top: 140px;
+	}
+	.img2 {
+		width: 190px;
+		position: absolute;
+		left: 210px;
+		top: 140px;
+	}
+	.spiderman-nowayhome {
+		font-size: 90%;
+		position: absolute;
+		top: 325px;
+		left: 18px;
+	}
+	.bouton1 {
+		position: absolute;
+		top: 360px;
+		left: 55px;
+	}
+	.les-eternels {
+		font-size: 90%;
+		position: absolute;
+		left: 268px;
+		top: 325px;
+	}
+	.bouton2 {
+		position: absolute;
+		top: 360px;
+		left: 261px;
+	}
+}
