@@ -1,0 +1,264 @@
+@font-face
+{
+	font-family: LemonMilk;
+	src: url(polices/LemonMilk.ttf);
+}
+
+@font-face
+{
+	font-family: Futura;
+	src: url(polices/futura.ttf);
+}
+@font-face {
+  font-family: Warownia Black Narrow;
+  src: url('polices/WarowniaBlkNrw.ttf');
+}
+
+
+
+body
+{
+	background-color: #0c243c;
+}
+.spiderman-nowayhome
+{
+	color: white;
+	font-size: 90%;
+	position: absolute;
+	left: 46px;
+	top: 413px;
+	font-family: Warownia Black Narrow;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.img1
+{
+	border-radius: 10px;
+	width: 15%;
+	position: absolute;
+	top: 198px;
+	left: 2%;
+}
+.bouton1{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background: #b80c0f;
+    width: 85px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    position: absolute;
+    top: 445px;
+    left: 80px;
+}
+.bouton1:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.logo
+{
+	font-size: 40px;
+	color: white;
+	font-family: Futura;
+	text-transform: uppercase;
+}
+li{
+	font-size: 22px;
+	font-family: Futura;
+	text-transform: uppercase;
+}
+a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.main-head
+{
+	background-color: #0c243c;
+}
+nav
+{
+	min-height: 10vh;
+	display: flex;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	padding: 2rem;
+}
+nav ul
+{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+#logo
+{
+	flex: 1 1 40rem;
+}
+.films1
+{
+	display: flex;
+	color: white;
+	font-family: Futura;
+	text-transform: uppercase;
+	position: absolute;
+	left: 2%;
+	top: 110px;
+}
+.ajoutrécents1
+{
+	display: flex;
+	color: white;
+	font-family: Futura;
+	text-transform: uppercase;
+	position: absolute;
+	left: 8%;
+	top: 121px;
+}
+.img2
+{
+	border-radius: 10px;
+	width: 15%;
+	position: absolute;
+	top: 198px;
+	left: 18%;
+}
+.les-eternels
+{
+	color: white;
+	font-size: 90%;
+	position: absolute;
+	left: 308px;
+	top: 413px;
+	font-family: Warownia Black Narrow;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.bouton2{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background: #b80c0f;
+    width: 85px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    position: absolute;
+    top: 445px;
+    left: 300px;
+}
+.bouton2:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.footer1
+{
+	color: white;
+	text-transform: uppercase;
+	font-family: Futura;
+	text-align: center;
+}
+.univers1
+{
+	width: 16%;
+	height: auto;
+	position: absolute;
+	border-radius: 10px;
+	left: 76px;
+	top: 220px;
+	padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+.filmsetseriesparunivers
+{
+	color: white;
+	position: absolute;
+	left: 76px;
+	font-size: 25px;
+	top: 120px;
+	font-family: monospace;
+}
+.retrouvervosfilmsetseriesfavorisgratuitementparunivers
+{
+	color: #bbb5a8;
+	position: absolute;
+	left: 76px;
+	font-size: 15px;
+	top: 160px;
+	font-family: monospace;
+}
+.univers2
+{
+	width: 16%;
+	height: auto;
+	position: absolute;
+	border-radius: 10px;
+	left: 310px;
+	top: 220px;
+	padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.univers1:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);}
+.univers2:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);}	
+.univers3
+{
+	width: 16%;
+	height: auto;
+	position: absolute;
+	border-radius: 10px;
+	left: 544px;
+	top: 220px;
+	padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.univers3:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);}
