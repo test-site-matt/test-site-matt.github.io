@@ -1,358 +1,193 @@
-@font-face
-{
-	font-family: LemonMilk;
-	src: url(polices/LemonMilk.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
 }
-
-@font-face
-{
-	font-family: Futura;
-	src: url(polices/futura.ttf);
+body {
+	background-color: #1c1c44;
 }
-@font-face {
-  font-family: Warownia Black Narrow;
-  src: url('polices/WarowniaBlkNrw.ttf');
+nav{
+   display: flex;
+   width: 100%;
+   background: #1c1c44;
+   position: relative;
+   justify-content: space-between;
+   text-align: center;
+   padding: 15px 30px;
 }
-
-
-
-body
-{
-	background-color: #0c243c;
+nav .icon{
+   font-size: 35px;
+   font-weight: 800;
+   color: #fff;
+   cursor: pointer;
 }
-.spiderman-nowayhome
-{
-	color: white;
-	font-size: 90%;
-	position: absolute;
-	left: 46px;
-	top: 413px;
-	font-family: Warownia Black Narrow;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+nav ol{
+   display: flex;
+   list-style: none;
+   margin: auto 0;
 }
-.img1
-{
-	border-radius: 10px;
-	width: 208px;
-	height: auto;
-	position: absolute;
-	top: 198px;
-	left: 2%;
+nav ol li{
+   margin: 0 2px;
 }
-.bouton1{
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    background: #b80c0f;
-    width: 85px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-    position: absolute;
-    top: 445px;
-    left: 80px;
+nav ol li a{
+   color: #fff;
+   font-size: 20px;
+   text-decoration: none;
+   text-transform: capitalize;
+   letter-spacing: 1px;
+   padding: 5px 10px;
 }
-.bouton1:hover, .btn:focus, .btn:active{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+nav ol li:hover a{
+   background: #fff;
+   color: #0a5071;
 }
-.logo
-{
-	font-size: 40px;
-	color: white;
-	font-family: Futura;
-	text-transform: uppercase;
+nav .search_box{
+   display: flex;
+   margin: auto 0;
+   height: 35px;
+   line-height: 35px;
 }
-li{
-	font-size: 22px;
-	font-family: Futura;
-	text-transform: uppercase;
+nav .search_box input{
+   border: none;
+   outline: none;
+   background: #fff;
+   height: 100%;
+   padding: 0 10px;
+   font-size: 20px;
+   width: 350px;
 }
-a
-{
-	color: #ffffff;
-	text-decoration: none;
+nav .search_box span{
+   color: #0a5071;
+   font-size: 20px;
+   background: #fff;
+   height: 100%;
+   padding: 8px;
+   position: relative;
+   cursor: pointer;
+   z-index: 1;
 }
-.main-head
-{
-	background-color: #0c243c;
+nav .search_box span:hover{
+   color: #fff;
 }
-nav
-{
-	min-height: 10vh;
-	display: flex;
-	align-items: center;
-	width: 90%;
-	margin: auto;
-	padding: 2rem;
+nav .search_box span::after{
+   height: 100%;
+   width: 0%;
+   content: '';
+   background: #ff003c;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: -1;
+   transition: 0.3s;
 }
-nav ul
-{
-	display: flex;
-	flex: 1 1 40rem;
-	justify-content: space-around;
-	align-items: center;
-	list-style: none;
+nav .search_box span:hover::after{
+   width: 100%;
 }
-#logo
-{
-	flex: 1 1 40rem;
+nav .bar{
+   position: relative;
+   margin: auto;
+   display: none;
 }
-.films1
-{
-	display: flex;
-	color: white;
-	font-family: Futura;
-	text-transform: uppercase;
-	position: absolute;
-	left: 2%;
-	top: 110px;
+nav .bar span{
+   position: absolute;
+   color: #fff;
+   font-size: 35px;
 }
-.ajoutrécents1
-{
-	display: flex;
-	color: white;
-	font-family: Futura;
-	text-transform: uppercase;
-	position: absolute;
-	left: 8%;
-	top: 121px;
+input[type="checkbox"]{
+   -webkit-appearance: none;
+   display: none;
 }
-.img2
-{
-	border-radius: 10px;
-	width: 208px;
-	position: absolute;
-	top: 198px;
-	left: 18%;
-	height: auto;
-}
-.les-eternels
-{
-	color: white;
-	font-size: 90%;
-	position: absolute;
-	left: 308px;
-	top: 413px;
-	font-family: Warownia Black Narrow;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-.bouton2{
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    background: #b80c0f;
-    width: 85px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-    position: absolute;
-    top: 445px;
-    left: 300px;
-}
-.bouton2:hover, .btn:focus, .btn:active{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.footer1
-{
-	color: white;
-	text-transform: uppercase;
-	font-family: Futura;
-	text-align: center;
-}
-.univers1
-{
-	width: 16%;
-	height: auto;
-	position: absolute;
-	border-radius: 10px;
-	left: 76px;
-	top: 220px;
-	padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-
-}
-.filmsetseriesparunivers
-{
-	color: white;
-	position: absolute;
-	left: 76px;
-	font-size: 25px;
-	top: 120px;
-	font-family: monospace;
-}
-.retrouvervosfilmsetseriesfavorisgratuitementparunivers
-{
-	color: #bbb5a8;
-	position: absolute;
-	left: 76px;
-	font-size: 15px;
-	top: 160px;
-	font-family: monospace;
-}
-.univers2
-{
-	width: 16%;
-	height: auto;
-	position: absolute;
-	border-radius: 10px;
-	left: 310px;
-	top: 220px;
-	padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-}
-.univers1:hover, .btn:focus, .btn:active{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);}
-.univers2:hover, .btn:focus, .btn:active{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);}	
-.univers3
-{
-	width: 16%;
-	height: auto;
-	position: absolute;
-	border-radius: 10px;
-	left: 544px;
-	top: 220px;
-	padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-}
-.univers3:hover, .btn:focus, .btn:active{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);}
-
-@media (max-width: 700px) {
-	.univers1 {
-		width: 40%;
-		left: 20px;
-	}
-	.filmsetseriesparunivers {
-		left: 20px;
-		font-size: 22px;
-	}
-	.retrouvervosfilmsetseriesfavorisgratuitementparunivers {
-		left: 20px;
-		font-size: 14px;
-	}
-	.logo {
-		font-size: 35px;
-		position: absolute;
-		left: 10px;
-		top: 10px;
-	}
-	.filmsnav {
-		position: absolute;
-		left: 125px;
-		font-size: 21px;
-		top: 20px;
-	}
-	.seriesnav {
-		position: absolute;
-		left: 183px;
-		font-size: 21px;
-		top: 20px;
-	}
-	.sagasnav {
-		position: absolute;
-		left: 245px;
-		font-size: 21px;
-		top: 20px;
-	}
-	.universnav {
-		position: absolute;
-		left: 305px;
-		font-size: 21px;
-		top: 20px;
-	}
-	.films1 {
-		position: absolute;
-		font-size: 30px;
-		top: 54px;
-		left: 10px;
-	}
-	.ajoutrécents1 {
-		position: absolute;
-		font-size: 18px;
-		top: 64px;
-		left: 90px;
-	}
-	.img1 {
-		width: 190px;
-		position: absolute;
-		top: 140px;
-		height: auto;
-	}
-	.img2 {
-		width: 190px;
-		position: absolute;
-		left: 210px;
-		top: 140px;
-		height: auto;
-	}
-	.spiderman-nowayhome {
-		font-size: 90%;
-		position: absolute;
-		top: 325px;
-		left: 18px;
-	}
-	.bouton1 {
-		position: absolute;
-		top: 360px;
-		left: 55px;
-	}
-	.les-eternels {
-		font-size: 90%;
-		position: absolute;
-		left: 268px;
-		top: 325px;
-	}
-	.bouton2 {
-		position: absolute;
-		top: 360px;
-		left: 261px;
-	}
+@media screen and (max-width: 1200px){
+   nav{
+      display: block;
+      padding: 0;
+   }
+   nav .icon{
+      display: inline-block;
+      padding: 15px 30px;
+   }
+   nav .search_box{
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      margin-bottom: 15px;
+   }
+   nav .search_box input{
+      width: 90%;
+   }
+   nav ol{
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      height: 0;
+      visibility: hidden;
+      transition: 0.3s;
+   }
+   nav ol li{
+      text-align: center;
+      transition: 0.3s 0.1s all;
+      opacity: 0;
+   }
+   nav ol li a{
+      color: #000;
+      font-size: 28px;
+      padding: 25px;
+      display: block;
+   }
+   nav ol li:nth-child(1){
+      transform: translateX(-150px);
+   }
+   nav ol li:nth-child(2){
+      transform: translateX(-200px);
+   }
+   nav ol li:nth-child(3){
+      transform: translateX(-250px);
+   }
+   nav ol li:nth-child(4){
+      transform: translateX(-300px);
+   }
+   nav ol li:nth-child(5){
+      transform: translateX(-350px);
+   }
+   nav .bar{
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 80px;
+      cursor: pointer;
+   }
+   nav .bar #times{
+      display: none;
+   }
+   #check:checked ~ nav .bar #times{
+      display: block;
+   }
+   #check:checked ~ nav .bar #bars{
+      display: none;
+   }
+   #check:checked ~ nav ol{
+      visibility: visible;
+      height: 465px;
+   }
+   #check:checked ~ nav ol li:nth-child(1),
+   #check:checked ~ nav ol li:nth-child(2),
+   #check:checked ~ nav ol li:nth-child(3),
+   #check:checked ~ nav ol li:nth-child(4),
+   #check:checked ~ nav ol li:nth-child(5){
+      transform: translateX(0);
+      opacity: 1;
+   }
+} 
+section{
+   background: url(img.jpg);
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   background-position: center;
+   background-size: cover;
+   top: 0;
+   z-index: -1;
+   filter: brightness(30%);
 }
